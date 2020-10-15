@@ -1,0 +1,33 @@
+I would propose that we do that following for this course:
+
+1. Do the exact same game (twice) one with Unity and then with Real Engine.
+The reason for this is twofold. First, we don't have to re-invent the wheel,
+and can just use our first idea twice - saving time. Secondly, it will be
+that much easier at the end of the course when we are asked to compare
+the two engines.
+
+Sophie had suggested we do a 2d game, which I am not opposed to, and would likely
+be easier, which I am always in favor of. So, unless Darwin strongly opposes
+I suggest we go with that.
+
+So, unless I am mistaken, the specifications are translated (for me) in the
+adjacent file (game-specifications.txt). Please correct if I am wrong.
+
+As per, "Game idea" I have had a lot of random thoughts. Here are some games
+from the past that I looked up, that seem to be applicable (more or less).
+
+The Gauntlet
+Super Mario brothers
+The Legend of Zelda
+
+I have also thought perhaps something along the lines a "Pokemon" themed game.
+I don't know anything about Pokemon to be honest, but like have a little yellow
+ball (for starters) named Pikachu, and he just goes through a map
+kill any or random monsters (cubes for starters) and loots various powerups.
+
+Naturally, we could just do a generic "adventurer" who does that same. Gaining
+powers as he levels up, and gets to the end (or dies, if he is REALLY lousy, I
+expect the game to be easy).
+
+So, in sum, whatever you guys vote for, let me know and I will email Thereza
+our idea.

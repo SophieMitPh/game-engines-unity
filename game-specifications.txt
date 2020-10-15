@@ -1,0 +1,18 @@
+Game characteristics:
+
+When player dies - they start back at the beginning.
+Random generated "dungeons", i assume maps?
+running through (looting, picking stuff up) get
+powerups
+Exploration
+hack-n-slash (basically, fighting)
+round based - combat?
+A clear goal - for objective of games
+Elements of the game are discovered throughout it (exploring)
+Winnable
+Playable
+Can start the game anew without completing it
+UI
+
+
+Missing anything here?
