@@ -1570,9 +1570,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1843068451779097793}
+  - component: {fileID: 304084595493528324}
   m_Layer: 0
   m_Name: RB
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1593,6 +1594,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &304084595493528324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795699427852473798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9873a15a6762cc7499ebbc86b2110cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openingDirection: 0100000004000000
 --- !u!1 &5863236259138174490
 GameObject:
   m_ObjectHideFlags: 0
