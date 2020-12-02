@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 4900469328309098578, guid: 43789ba83d3aa5e43b679b4a6f899281, type: 3}
-  end: {fileID: 3978500083760860750, guid: a3d0287d6c03f7c46924eaa50b1f820c, type: 3}
+  end: {fileID: 6495628173155344490, guid: c196feea0c13f27469fe532b6d556b65, type: 3}
 --- !u!4 &60838267
 Transform:
   m_ObjectHideFlags: 0
