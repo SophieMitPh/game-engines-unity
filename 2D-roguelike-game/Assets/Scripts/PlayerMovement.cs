@@ -7,8 +7,18 @@ public class PlayerMovement : MonoBehaviour
     
     public float moveSpeed;
     public Rigidbody2D rb;
-    
     private Vector2 moveDirection;
+
+    public int maxHealth = 100;
+    public int currentHealth;
+    public Healthbar healthbar;
+    private int damage = 10;
+
+    void Start()
+    {
+        currentHealth = maxHealth;
+        healthbar.SetMaxHealth(maxHealth);
+    }
 
     // Update is called once per frame
     void Update()
@@ -25,9 +35,18 @@ public class PlayerMovement : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
         
         moveDirection = new Vector2(moveX, moveY).normalized;
+
+        if(Input.GetKeyDown(KeyCode.Space)){
+            TakeDamage(damage);
+        }
     }
     
     void Move(){
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+    }
+
+    void TakeDamage(int damage){
+        currentHealth -= damage;
+        healthbar.SetHealth(currentHealth);
     }
 }
