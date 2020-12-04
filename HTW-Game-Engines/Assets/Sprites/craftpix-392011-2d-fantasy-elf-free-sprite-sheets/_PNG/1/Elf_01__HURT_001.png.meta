@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: b462121b0f425c74ebcb9ae7dac395e4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3359558035794829122
+    second: Elf_01__HURT_001_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +100,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Elf_01__HURT_001_0
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 219
+        width: 444
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0e32224c37061d0800000000000000
+      internalID: -3359558035794829122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

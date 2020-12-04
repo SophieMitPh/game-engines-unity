@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 77ba3b2c85620fe4db43a0842748e489
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4442958874922042047
+    second: Elf_01__DIE_003_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,7 +100,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Elf_01__DIE_003_0
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 206
+        width: 357
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d3a9c61707752c0800000000000000
+      internalID: -4442958874922042047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
