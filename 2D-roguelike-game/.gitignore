@@ -84,3 +84,5 @@ node_modules
 
 # Ignore SASS config files
 .sass-cache
+
+/Assets/AstarPathFindingProject
