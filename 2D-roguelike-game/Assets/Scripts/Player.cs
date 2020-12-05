@@ -67,21 +67,20 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag.Equals("Enemy")){
             TakeDamage(damage);
         }
     }
 
-    private void OnCollisionStay2D(Collision2D other) {
+    private void OnTriggerStay2D(Collider2D other) {
         elapsed += Time.deltaTime;
-        if (elapsed >= 1f) {
-            elapsed = elapsed % 1f;
+        if (elapsed >= 0.5f) {
+            elapsed = elapsed % 0.5f;
             if(other.gameObject.tag.Equals("Enemy")){
                 TakeDamage(damage);
             }
-        }
-          
+        }  
     }
 
     void Die()
