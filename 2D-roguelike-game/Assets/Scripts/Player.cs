@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         ProcessInputs();
-        Die();
+        Die(); // TODO: OnTrigger methode? wenn: currentHealth = 0
     }
     
     void FixedUpdate(){
@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
     {
         if(currentHealth <= 0){
             //Destroy(gameObject);
+            // TODO: restart button.isClicked => SceneManager.LoadScene(0);
         }
-        //SceneManager.LoadScene(0);
     }
 }
