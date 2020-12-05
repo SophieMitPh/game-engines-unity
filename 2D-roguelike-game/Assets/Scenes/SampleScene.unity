@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn
       objectReference: {fileID: 0}
+    - target: {fileID: 4900469328309098578, guid: 43789ba83d3aa5e43b679b4a6f899281,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43789ba83d3aa5e43b679b4a6f899281, type: 3}
 --- !u!1 &60838265
@@ -802,7 +807,7 @@ GameObject:
   - component: {fileID: 1217255232}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -826,7 +831,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &1217255229
 SpriteRenderer:
@@ -908,7 +913,7 @@ MonoBehaviour:
   moveSpeed: 50
   rb: {fileID: 1217255228}
   maxHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   healthbar: {fileID: 708901465}
 --- !u!61 &1217255232
 BoxCollider2D:
@@ -935,7 +940,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 3.42, y: 3.42}
-  m_EdgeRadius: 1
+  m_EdgeRadius: 0.5
 --- !u!1 &1529497861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,12 +1534,17 @@ PrefabInstance:
     - target: {fileID: 622391400114738158, guid: 2bd6410523769da4b98b8d294e96d96b,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.4
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 622391400114738158, guid: 2bd6410523769da4b98b8d294e96d96b,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.3
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 622391400114738158, guid: 2bd6410523769da4b98b8d294e96d96b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2213880354268630219, guid: 2bd6410523769da4b98b8d294e96d96b,
         type: 3}
@@ -1601,7 +1611,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 622391400114738158, guid: 2bd6410523769da4b98b8d294e96d96b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2bd6410523769da4b98b8d294e96d96b, type: 3}
 --- !u!1 &4241414687737478306 stripped
 GameObject:
@@ -1622,7 +1633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 2
-  radius: 4
+  radius: 2.5
   height: 2
   repathRate: 0.5
   canSearch: 1
@@ -1638,9 +1649,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 3
-  pickNextWaypointDist: 3
-  endReachedDistance: 7.5
+  slowdownDistance: 2
+  pickNextWaypointDist: 2
+  endReachedDistance: 4.75
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -1711,5 +1722,26 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.5, y: 5.5}
+  m_Size: {x: 6, y: 4}
   m_EdgeRadius: 0
+--- !u!50 &4241414687737478312
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4241414687737478306}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
