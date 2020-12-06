@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
 
         //Sets our animator to show "running"
-        animator.SetTrigger("playerRunning");
+        animator.SetBool("playerRunning", true);
     }
 
     void TakeDamage(int damage){

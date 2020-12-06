@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.tag.Equals("Player")){
+        if(other.gameObject.tag.Equals("PlayerWeapon")){
             TakeDamage(damage);
             if(currentHealth <= 0){
                 Destroy(gameObject);

@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/HTW-2D-Roguelike.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
