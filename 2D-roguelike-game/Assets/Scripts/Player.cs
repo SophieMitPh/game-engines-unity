@@ -17,10 +17,16 @@ public class Player : MonoBehaviour
     private int heal = 10;
     float elapsed = 0f;
 
+    //this is used to store a refernce to our animator controller
+    private Animator animator;
+
     void Start()
     {
         currentHealth = maxHealth;
         healthbar.SetMaxHealth(maxHealth);
+
+        //retrieves the reference to our animator component
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,12 +57,18 @@ public class Player : MonoBehaviour
     
     void Move(){
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+
+        //Sets our animator to show "running"
+        animator.SetTrigger("playerRunning");
     }
 
     void TakeDamage(int damage){
         if(currentHealth > 0){
             currentHealth -= damage;
             healthbar.SetHealth(currentHealth);
+
+            //Sets our animator to show "damage taken"
+            animator.SetTrigger("playerHurt");
         }
     }
 
@@ -88,6 +100,9 @@ public class Player : MonoBehaviour
         if(currentHealth <= 0){
             //Destroy(gameObject);
             // TODO: restart button.isClicked => SceneManager.LoadScene(0);
+        
+            //Sets our animator to show "our death"
+            animator.SetTrigger("playerDie");
         }
     }
 }
