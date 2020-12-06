@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         ProcessInputs();
-        Die(); // TODO: OnTrigger methode? wenn: currentHealth = 0
+        Die();
     }
     
     void FixedUpdate(){
@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
     {
         if(currentHealth <= 0){
             //Destroy(gameObject);
-            // TODO: restart button.isClicked => SceneManager.LoadScene(0);
+            Destroy(gameObject);
         
             //Sets our animator to show "our death"
             animator.SetTrigger("playerDie");
